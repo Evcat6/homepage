@@ -157,7 +157,8 @@ body {
     text-align: justify;
 }
 
-.skills__header {
+.skills__header,
+.timeline__header {
     color: var(--secondary-text-color);
     text-align: center;
     margin-bottom: 15px;
@@ -260,5 +261,31 @@ body {
 }
 
 .additional-info__languages-item {
+    color: var(--secondary-text-color);
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+}
+
+.timeline__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 25px;
+    column-gap: 50px;
+}
+
+.timeline__item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.timeline__item--arrow {
+    font-weight: 500;
+    color: var(--secondary-text-color);
+}
+
+.timeline__title--text {
     color: var(--secondary-text-color);
 }
