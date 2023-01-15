@@ -292,4 +292,25 @@ body {
     color: var(--secondary-text-color);
 }
 
+.resume {
+    position: relative;
+    overflow: hidden;
+}
 
+.cat-paw {
+    position: absolute; 
+    transform: rotate(-90deg);
+    right: -115px;
+    bottom: 40px;
+}
+
+
+.cat-paw:hover {
+    animation: smooth-show 1s running;
+}
+
+@keyframes smooth-show {
+    100% {
+        right: 0;
+    }
+}
